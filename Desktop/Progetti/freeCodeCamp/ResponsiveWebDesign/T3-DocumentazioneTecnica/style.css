@@ -1,0 +1,37 @@
+#navbar{    
+    position: fixed !important;
+    top:0;
+    left:0;
+    width: 300px;
+    height:100%;
+    background-color: aliceblue;
+    padding: 15px;
+}
+
+#navbar a{
+    display:block;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color:brown
+}
+
+*{
+    box-sizing:inherit
+}
+
+#main-doc{
+    position:absolute;
+    left:350px;
+}
+
+@media screen and (max-width: 768px) {
+    #navbar {
+      width: 150px;
+    }
+    #main-doc {
+      width: 120px;
+      margin-left: 20px;
+      left:180px;
+      
+    }
+}
