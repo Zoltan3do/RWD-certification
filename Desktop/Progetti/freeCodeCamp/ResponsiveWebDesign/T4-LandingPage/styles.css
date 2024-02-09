@@ -1,0 +1,230 @@
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+  }
+
+  nav{
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+  }
+
+  nav > ul{/*ul figlio di nav*/
+    display:flex;
+    justify-content:space-evenly;/*distanziare uniformemente*/
+
+    /*per allineare contenuto che straborda su schermi piccoli*/
+    align-items: center;
+    flex-wrap:wrap;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+  }
+
+  nav li{
+    color: black;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;   
+  }
+
+  nav > ul > li:hover{
+    background-color:#dfdfe2;
+    color:orangered;
+    cursor:pointer;/*serve a cambiare il puntatore del mouse*/
+  }
+
+  nav > ul > li:hover a{
+    color:orangered;
+  }
+
+  
+  li > a{
+    color:black;
+    text-decoration: none;
+  }
+
+  header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color: #f2f6d0;
+  }
+
+  #header-img{
+    margin-right:-40rem;
+    width:100px;
+    height: auto;
+  }
+
+  main{
+    padding-top: 100px;
+  }
+
+  form{
+    text-align: center;
+  }
+
+  input[type="submit"]{
+    width: 150px;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #d0e1d4
+  }
+  
+  #caratteristiche{
+    display:flex;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  input[type="submit"]:hover{
+    color:orangered
+  }
+
+
+
+  #caratteristiche div{
+    margin-left:5px;
+    margin-right: 5px;
+    border:1px solid transparent
+  } 
+
+  #videos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:20px auto;
+  }
+
+  #prezzi{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .prezzo{
+    text-align: center;
+    font-weight: 900;
+    font-size: 72px
+  }
+
+  caption{
+    background-color: #71697a;
+    color: #d9d2b6;
+    font-size: 27px
+  }
+
+  .data{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: unset
+  }
+
+  table:last-of-type{
+    margin-top: -18px;
+  }
+
+  footer{
+    display:flex;
+    justify-content: end;
+    justify-items: end;
+    align-items: left;
+    background-color: #d0e1d4;
+    font-size: small;
+  }
+
+  footer p{
+    margin-right: 20px;
+  }
+
+  footer a{
+    text-decoration: none;
+    color: black;
+  }
+
+  footer a:hover{
+    color: #e4be9e;
+  }
+
+
+  @media only screen and (max-width: 480px) {
+    nav {
+      width: 100%;
+      max-width: none;
+      height: auto;
+    }
+  
+    nav > ul {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    nav li {
+      margin: 0.5rem;
+    }
+  
+    header {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+    }
+  
+    #header-img {
+      margin-right: 0;
+    }
+  
+    main {
+      padding-top: 50px;
+    }
+  
+    #caratteristiche {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 20px;
+    }
+  
+    #caratteristiche div {
+      margin: 5px 0;
+    }
+  
+    #prezzi {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  
+    .prezzo {
+      font-size: 48px;
+    }
+  
+    footer {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: smaller;
+      text-align: center;
+    }
+  
+    footer p {
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    footer a:hover {
+      color: #e4be9e;
+      text-decoration: underline;
+    }
+  }
+  
+  
+
+
